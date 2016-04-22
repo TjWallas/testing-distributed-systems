@@ -1,34 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>Testing Distributed Systems by asatarin</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Testing Distributed Systems</h1>
-        <p>List of curated materials on testing distributed systems</p>
+    <section class="page-header">
+      <h1 class="project-name">Testing Distributed Systems</h1>
+      <h2 class="project-tagline">List of curated materials on testing distributed systems</h2>
+      <a href="https://github.com/asatarin/testing-distributed-systems" class="btn">View on GitHub</a>
+      <a href="https://github.com/asatarin/testing-distributed-systems/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/asatarin/testing-distributed-systems/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <p class="view"><a href="https://github.com/asatarin/testing-distributed-systems">View the Project on GitHub <small>asatarin/testing-distributed-systems</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/asatarin/testing-distributed-systems/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/asatarin/testing-distributed-systems/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/asatarin/testing-distributed-systems">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
+    <section class="main-content">
+      <h1>
 <a id="testing-distributed-systems" class="anchor" href="#testing-distributed-systems" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing Distributed Systems</h1>
 
 <h2>
@@ -113,7 +104,7 @@ Additional materials for this talk could be found in <a href="https://github.com
 <a id="kill-dash-nine" class="anchor" href="#kill-dash-nine" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Kill-dash-nine</h3>
 
 <ul>
-<li><a href="https://stripe.com/blog/game-day-exercises-at-stripe">Game Day Exercises at Stripe: Learning from <code>kill -9</code></a></li>
+<li><a href="https://stripe.com/blog/game-day-exercises-at-stripe">Game Day Exercises at Stripe: Learning from kill -9</a></li>
 <li><a href="http://bravenewgeek.com/sometimes-kill-9-isnt-enough/">Sometimes Kill -9 Isn’t Enough</a></li>
 <li><a href="https://github.com/tylertreat/Comcast">Comcast tool</a></li>
 <li><a href="https://github.com/ModusCreateOrg/slow/">Slow tool</a></li>
@@ -158,6 +149,8 @@ Additional materials for this talk could be found in <a href="https://github.com
 <a id="netflix" class="anchor" href="#netflix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Netflix</h3>
 
 <ul>
+<li><a href="http://www.infoq.com/presentations/failure-test-research-netflix">Monkeys in Lab Coats: Applying Failure Testing Research @Netflix</a></li>
+<li><a href="http://www.infoq.com/news/2016/03/failure-testing-netflix">“Monkeys in Labs Coats”: Applied Failure Testing Research at Netflix</a></li>
 <li><a href="http://techblog.netflix.com/2016/01/automated-failure-testing.html">Automated Failure Testing</a></li>
 <li><a href="http://techblog.netflix.com/2011/07/netflix-simian-army.html">Netflix Simian Army</a></li>
 <li><a href="http://techblog.netflix.com/2014/10/fit-failure-injection-testing.html">Failure Injection Testing</a></li>
@@ -204,8 +197,19 @@ Additional materials for this talk could be found in <a href="https://github.com
 <h3>
 <a id="voltdb" class="anchor" href="#voltdb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>VoltDB</h3>
 
+<p>Series of post on testing at VoltDB:</p>
+
 <ul>
 <li><a href="https://voltdb.com/blog/how-we-test-voltdb">How We Test at VoltDB</a></li>
+<li>
+<a href="https://voltdb.com/blog/testing-voltdb-sqlcoverage">Testing at VoltDB: SQLCoverage</a> 
+Describes how they test SQL query functionality using 5 millions queries generated from templates and comparing results against HSQLDB.</li>
+<li><a href="https://voltdb.com/blog/testing-voltdb-against-postgresql">Testing VoltDB Against PostgreSQL</a></li>
+</ul>
+
+<p>Additional resources:</p>
+
+<ul>
 <li>
 <a href="https://www.youtube.com/watch?v=gJRj3vJL4wE">"All In With Determinism for Performance and Testing in Distributed Systems" by John Hugg</a> and a slide deck <a href="https://github.com/strangeloop/StrangeLoop2015/blob/master/slides/talks/Hugg-DeterministicDistributedSystems.pdf">Hugg-DeterministicDistributedSystems.pdf</a>
 </li>
@@ -225,6 +229,22 @@ Additional materials for this talk could be found in <a href="https://github.com
 </ul>
 
 <h3>
+<a id="cockroachdb" class="anchor" href="#cockroachdb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CockroachDB</h3>
+
+<ul>
+<li>
+<a href="https://www.cockroachlabs.com/blog/diy-jepsen-testing-cockroachdb/">DIY Jepsen Testing CockroachDB</a> -- great read about using Jepsen at Cockroach Labs</li>
+</ul>
+
+<h3>
+<a id="cloudera" class="anchor" href="#cloudera" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cloudera</h3>
+
+<ul>
+<li>
+<a href="http://blog.cloudera.com/blog/2016/04/quality-assurance-at-cloudera-fault-injection-and-elastic-partitioning/">Quality Assurance at Cloudera: Fault Injection and Elastic Partitioning</a> -- Cloudera describes their approach to fault injection testing</li>
+</ul>
+
+<h3>
 <a id="foundationdb" class="anchor" href="#foundationdb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FoundationDB</h3>
 
 <ul>
@@ -232,7 +252,7 @@ Additional materials for this talk could be found in <a href="https://github.com
 </ul>
 
 <h3>
-<a id="google-" class="anchor" href="#google-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Google ###</h3>
+<a id="google" class="anchor" href="#google" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Google</h3>
 
 <ul>
 <li>
@@ -375,13 +395,15 @@ Additional materials for this talk could be found in <a href="https://github.com
 <ul>
 <li><a href="http://www.funtoo.org/Traffic_Control">Traffic Control</a></li>
 </ul>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/asatarin">asatarin</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/asatarin/testing-distributed-systems">Testing Distributed Systems</a> is maintained by <a href="https://github.com/asatarin">asatarin</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+    </section>
+
+  
   </body>
 </html>
