@@ -49,6 +49,8 @@ Additional materials for this talk could be found in <a href="https://github.com
 <li>
 <a href="http://ucare.cs.uchicago.edu/pdf/socc14-cbs.pdf">What Bugs Live in the Cloud? A Study of 3000+ Issues in Cloud Systems</a>  -- study of actual bugs in different popular distributed systems (Hadoop MapReduce, HDFS, HBase, Cassandra, ZooKeeper
 and Flume)</li>
+<li>
+<a href="http://ucare.cs.uchicago.edu/pdf/asplos16-TaxDC.pdf">TaxDC: A Taxonomy of Non-Deterministic Concurrency Bugs in Datacenter Distributed Systems</a> -- comprehencive taxonomy of bugs in distributed systems (Cassandra, Hadoop MapReduce, HBase, ZooKeeper)</li>
 </ul>
 
 <h3>
@@ -89,7 +91,7 @@ and Flume)</li>
 <li><a href="http://verdi.uwplse.org/">Verdi: Formally Verifying Distributed Systems</a></li>
 <li><a href="https://homes.cs.washington.edu/%7Ejrw12/network-semantics.html">Network Semantics for Verifying Distributed Systems</a></li>
 <li>
-<a href="http://queue.acm.org/detail.cfm?id=2889274">The verification of a distributed system By Caitie McCaffrey</a> also <a href="https://www.infoq.com/articles/podcast-caitie-mccaffrey">podcast</a> on InfoQ.com and <a href="https://github.com/CaitieM20/TheVerificationOfDistributedSystem">accompanying materials</a> on GitHub and a <a href="https://speakerdeck.com/caitiem20/qcon-newyork-2016-the-verification-of-a-distributed-system">slidedeck</a>
+<a href="http://queue.acm.org/detail.cfm?id=2889274">The verification of a distributed system By Caitie McCaffrey</a> also <a href="https://www.infoq.com/articles/podcast-caitie-mccaffrey">podcast</a> and <a href="https://www.infoq.com/presentations/distributed-systems-verification">talk</a> on InfoQ.com and <a href="https://github.com/CaitieM20/TheVerificationOfDistributedSystem">accompanying materials</a> on GitHub and a <a href="https://speakerdeck.com/caitiem20/qcon-newyork-2016-the-verification-of-a-distributed-system">slidedeck</a>
 </li>
 </ul>
 
@@ -152,10 +154,19 @@ and Flume)</li>
 <h3>
 <a id="netflix" class="anchor" href="#netflix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Netflix</h3>
 
+<p>On automated failure injection:</p>
+
 <ul>
 <li><a href="http://www.infoq.com/presentations/failure-test-research-netflix">Monkeys in Lab Coats: Applying Failure Testing Research @Netflix</a></li>
 <li><a href="http://www.infoq.com/news/2016/03/failure-testing-netflix">“Monkeys in Labs Coats”: Applied Failure Testing Research at Netflix</a></li>
 <li><a href="http://techblog.netflix.com/2016/01/automated-failure-testing.html">Automated Failure Testing</a></li>
+<li>
+<a href="https://scholar.google.ru/scholar?hl=en&amp;q=Automating+Failure+Testing+Research+at+Internet+Scale&amp;btnG=&amp;as_sdt=1%2C5&amp;as_sdtp=">Automating Failure Testing Research at Internet Scale</a> by P. Alvaro et.el</li>
+</ul>
+
+<p>Random/manual failure injection testing: </p>
+
+<ul>
 <li><a href="http://techblog.netflix.com/2011/07/netflix-simian-army.html">Netflix Simian Army</a></li>
 <li><a href="http://techblog.netflix.com/2014/10/fit-failure-injection-testing.html">Failure Injection Testing</a></li>
 <li><a href="http://techblog.netflix.com/2015/08/from-chaos-to-control-testing.html">From Chaos to Control - Testing the resiliency of Netflix’s Content Discovery Platform</a></li>
@@ -264,7 +275,9 @@ Describes how they test SQL query functionality using 5 millions queries generat
 <a href="http://www.pdl.cmu.edu/PDL-FTP/associated/CMU-PDL-11-113.pdf">Efficient Exploratory Testing of Concurrent Systems</a> -- They don`t mention it but looks like they describe testing of Google Omega</li>
 <li><a href="https://github.com/google/cluster-data/blob/master/ETAExplorationTraces.md">Exploratory Testing Architecture (ETA) </a></li>
 <li>
-<a href="http://research.google.com/pubs/pub33002.html">Paxos Made Live - An Engineering Perspective</a>  has a section on testing</li>
+<a href="http://research.google.com/pubs/pub33002.html">Paxos Made Live - An Engineering Perspective</a> has a section on testing</li>
+<li>
+<a href="https://www.usenix.org/conference/lisa15/conference-program/presentation/krishnan">10 Years of Crashing Google</a> describes some war stories from Disaster Recovery Testing (DiRT) team at Google</li>
 </ul>
 
 <h3>
@@ -382,6 +395,7 @@ Describes how they test SQL query functionality using 5 millions queries generat
 <li><a href="http://oltpbenchmark.com/wiki/index.php?title=Main_Page">OLTP Benchmark Wiki</a></li>
 <li><a href="https://github.com/oltpbenchmark">OLTP Benchmark on Github</a></li>
 <li><a href="https://github.com/apavlo/py-tpcc">Py-TPCC</a></li>
+<li><a href="http://techblog.netflix.com/2016/09/netflix-data-benchmark-benchmarking.html">Netflix Data Benchmark: Benchmarking Cloud Data Stores</a></li>
 </ul>
 
 <h3>
